@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zad8style.css">
+    <title>Tabela</title>
+</head>
+<body>
+    <section id="sTabela">
+		<h2>Tabela - student wyniki</h2>
+		<table id="tabelaStud">
+			<thead id="naglowek">
+				<tr>
+					<th id="blank"></th>
+					<th>Student 1</th>
+					<th>Student 2</th>
+					<th>Student 3</th>
+					<th>Student 4</th>
+					<th>Student 5</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Row of Data 1-->
+				<tr>
+					<td class="naglowekPion">Projekt 1</td>
+					<td>5.0</td>
+					<td>4.5</td>
+					<td>4.0</td>
+					<td>3.5</td>
+					<td>5.5</td>
+				</tr>
+				<!-- Row of Data 2-->
+				<tr>
+					<td class="naglowekPion">Projekt 2</td>
+					<td colspan="2" rowspan="2" class="proj2gr1">3.5</td>
+					<!--<td>3.5</td>-->
+					<td colspan="2" class="proj2gr2">2.0</td>
+					<!--<td>2.0</td>-->
+					<td class="proj2gr1" rowspan="2">3.5</td>
+				</tr>
+				<!-- Row of Data 3-->
+				<tr>
+					<td class="naglowekPion">Projekt 2 poprawa</td>
+					<td colspan="2" class="proj2gr2">3.0</td>			
+				</tr>
+				<!-- Row of Data 4-->
+				<tr>
+					<td class="naglowekPion">Projekt 3 etap 1</td>
+					<td class="proj3gr1"> 5.0</td>
+					<td class="proj3gr2" colspan="3">3.5</td>
+					<td class="proj3gr1">5.0</td>
+				</tr>
+				<!-- Row of Data 5-->
+				<tr>
+					<td class="naglowekPion">Projekt 3 etap 2</td>
+					<td class="proj3gr1" rowspan="2"> 5.5</td>
+					<td class="proj3gr2" colspan="3">2.0</td>
+					<td class="proj3gr1" rowspan="2">5.5</td>
+				</tr>
+				<!-- Row of Data 6-->
+				<tr>
+					<td class="naglowekPion">Projekt 3 poprawa</td>
+					<td class="proj3gr2" colspan="3">3.5</td>			
+				</tr>
+				
+			</tbody>
+			<tfoot class="podsumowanieRow">
+				<tr>
+					<th id="podsumowanieHeader">Średnia</th>
+					<td>4.75</td>
+					<td>3.4</td>
+					<td>3.0</td>
+					<td>2.91</td>
+					<td id="highestGrade">4.875</td>
+				</tr>
+			</tfoot>
+		</table>
+	
+		<details>
+			<summary>Graficzne przedstawienie średnich</summary>
+			<p>Średnia Studenta 1 <meter min="2.0" max="5.5" low="3.5" value="4.75">Very good</meter>.</p>
+			<p>Średnia Studenta 2 <meter min="2.0" max="5.5" low="3.5" value="3.4">Very good</meter>.</p>
+			<p>Średnia Studenta 3 <meter min="2.0" max="5.5" low="3.5" value="3.0">Very good</meter>.</p>
+			<p>Średnia Studenta 4 <meter min="2.0" max="5.5" low="3.5" value="2.91">Very good</meter>.</p>
+			<p>Średnia Studenta 5 <meter min="2.0" max="5.5" low="3.5" value="4.875">Very good</meter>.</p>
+		</details>
+	</section>
+</body>
+</html>

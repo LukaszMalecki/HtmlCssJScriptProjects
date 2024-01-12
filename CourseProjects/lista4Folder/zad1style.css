@@ -1,0 +1,42 @@
+th
+{
+    background-color: yellow;
+    width: 40px;
+    text-align: right;
+}
+
+.even
+{
+    background-color:lightblue;
+    color:crimson;
+    text-align: right;
+}
+.odd
+{
+    background-color:greenyellow;
+    color:blueviolet;
+    text-align: right;
+}
+
+
+
+#sTabela
+{
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#myTable
+{
+    border: 5px solid;
+    border-collapse: collapse;
+}
+#myTable th
+{
+    border: 5px solid;
+    border-color: black;
+}
+#myTable td
+{
+    border: 3px solid;
+    border-color: black;
+}

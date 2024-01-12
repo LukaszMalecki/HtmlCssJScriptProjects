@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="zad1style.css">
+    <title>Tabliczka mnożenia</title>
+</head>
+<body>
+    <h1 id="h1">Tabliczka mnożenia</h1>
+    <table id="myTable"></table>
+    <p>Bardzo fajna tabela</p>
+
+    <script>
+        var defaultText = "Tabliczka mnożenia dla ";
+        var defaultText2 = " losowych elementów";
+        var errorText = " ";
+        var n=window.prompt("Podaj liczbę całkowitą z zakresu [5,20]:",10);
+        console.log(n%1 == 0);
+        console.log(n <= 20);
+        console.log(n >= 5);
+        if( (n < 5) || (n > 20) || (n%1 != 0))
+        {
+            n = 10;
+            errorText = " (podano błędne dane)";
+        }
+        var pElem=document.getElementById("h1");
+        pElem.innerText= defaultText + n + defaultText2 + errorText;  // tag rendering
+
+        const nArray = new Array(n);
+        for (let index = 0; index < n; index++) {
+           nArray[index]= Math.floor(Math.random()*99)+1;            
+        }
+
+        console.log(nArray);
+
+
+        var tab = document.getElementById("myTable");
+        //const tabHead = document.createElement("thead");
+        const tabBody = document.createElement("tbody");
+        //creating head
+        const tabRow = document.createElement("tr");
+
+        const tabRHead = document.createElement("th");
+        const tabText = document.createTextNode(``);
+        tabRHead.appendChild(tabText);
+        
+        //tabRHead.style.width="50px";
+
+        tabRow.appendChild(tabRHead);
+
+        for( let j = 0; j < n; j++)
+        {
+            const tabElem = document.createElement("th");
+            var value = nArray[j];
+            const tabText = document.createTextNode(`${value}`);
+            tabElem.appendChild(tabText);
+            tabRow.appendChild(tabElem);
+        }
+        tabBody.appendChild(tabRow);
+        //tab.appendChild(tabHead);
+
+        
+        //end of head
+        for( let i = 0; i < n; i++)
+        {
+            const tabRow = document.createElement("tr");
+
+            const tabRHead = document.createElement("th");
+            const tabText = document.createTextNode(`${nArray[i]}`);
+            tabRHead.appendChild(tabText);
+            tabRow.appendChild(tabRHead);
+
+            for( let j = 0; j < n; j++)
+            {
+                const tabElem = document.createElement("td");
+                var value = nArray[i]*nArray[j];
+                const tabText = document.createTextNode(`${value}`);
+                if( value%2==1)
+                    tabElem.classList.add("odd");
+                else
+                    tabElem.classList.add("even");
+                tabElem.appendChild(tabText);
+                tabRow.appendChild(tabElem);
+            }
+            tabBody.appendChild(tabRow);
+        }
+        tab.appendChild(tabBody);
+
+        //tab.setAttribute("border", "2");
+        //tab.style.tableLayout="fixed";
+
+
+    </script>
+</body>
+</html>

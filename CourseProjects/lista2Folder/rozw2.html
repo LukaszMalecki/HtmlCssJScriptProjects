@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html5, tag meta, example, form, table, lists, list">
+    <meta name="description" content="Moja strona, w której pokazuję możliwości HTML'a. ">
+    <meta name="author" content="Łukasz Małecki">
+    <title>Moja strona htmlowa</title>
+
+</head>
+<!-- lubię jabłka, kupiłem dwa ostatnio-->
+<body>
+	<h1 id="idStart">Moja strona jedno-htmlowa</h1>
+	<h2>Wykorzystanie znaków</h2>
+	<h3>Minki</h3>
+	<ul>
+		<li>&lt;:</li>
+		<li>:&gt;</li>
+		<li>(:</li>
+	</ul>
+	<h3>Dziwne znaki</h3>
+	<ol>
+		<li>&phone; - <del>usuniety telefon</del></li>
+		<li>&copy; - <i>italic copyright</i></li>
+		<li>&smile; - <b>bold uśmiech</b></li>
+		<li>&trade; - <small>small trade mark</small></li>
+		<li>&reg; - <sup>small registered trade mark</sup></li>
+	</ol>
+	<h3>Połączenie</h3>
+	<p>&nbsp;. .<br>&nbsp;&gt;<br>&smile;</p>
+	<h3>Definitywnie.</h3>
+	<dl>
+		<dt>Rzecz</dt>
+		<dd>Rzecz jest rzeczą, ciężko wytłumaczyć</dd>
+		<dt>Rzeczy</dt>
+		<dd>To samo, co rzecz, ale więcej</dd>
+		<dt>Rzeczownik</dt>
+		<dd>To samo, co rzecz, ale z ownikiem na końcu</dd>
+	</dl>
+	<h1>Liście rozbudowane - organizmy</h1>
+	<ul>
+		<li>Zwierzęta
+			<ol type="i">
+				<li>Kręgowce
+					<ul>
+						<li>Ssaki
+							<ol type="A">
+								<li>lądowe</li>
+								<li>wodne</li>
+							</ol>
+						</li>
+						<li>Ptaki
+							<ol>
+								<li>Kaczka</li>
+								<li>Kiwi</li>
+								<li>Czapla</li>
+							</ol>
+						</li>
+						<li>Ryby</li>
+					</ul>
+				</li>
+				<li>Bezkręgowce</li>
+			</ol>
+		</li>
+		<li>Rośliny</li>
+		<li>Grzyby
+			<ul>
+				<li>Drożdże</li>
+				<li>Borowik</li>
+				<li>Muchomor sromotnikowy</li>
+				<li>Kurka</li>
+				<li>Rydz</li>
+			</ul>
+		</li>
+	</ul>
+    <article>
+		<h3>Organizm</h3>
+        <details>
+            <summary>Definicja organizmu</summary>
+            Organizm – istota żywa charakteryzująca się procesami życiowymi (przede wszystkim przemianą materii), 
+            której części składowe tworzą funkcjonalną całość (indywiduum) zdolną do samodzielnego życia. 
+            Badaniem różnorodności organizmów i ich klasyfikowaniem zajmuje się systematyka organizmów. 
+            Szczątki organizmów wymarłych w odpowiednich warunkach tworzą skamieniałości. Zespół cech organizmu, 
+            na które wpływają czynniki środowiskowe i genotyp, nazywa się fenotypem.
+            <aside>Źródło: <a href="https://pl.wikipedia.org/wiki/Organizm" target="_blank">Wikipedia</a></aside>
+        </details>
+    </article>
+	
+    
+	<section>
+		<h2 id="idTabela">Tabela - student wyniki</h2>
+		<table border="10">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Student 1</th>
+					<th>Student 2</th>
+					<th>Student 3</th>
+					<th>Student 4</th>
+					<th>Student 5</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Row of Data 1-->
+				<tr>
+					<td>Projekt 1</td>
+					<td>5.0</td>
+					<td>4.5</td>
+					<td>4.0</td>
+					<td>3.5</td>
+					<td>5.5</td>
+				</tr>
+				<!-- Row of Data 2-->
+				<tr>
+					<td>Projekt 2</td>
+					<td colspan="2" rowspan="2" bgcolor="lightblue">3.5</td>
+					<!--<td>3.5</td>-->
+					<td colspan="2" bgcolor="yellow">2.0</td>
+					<!--<td>2.0</td>-->
+					<td bgcolor="lightblue" rowspan="2">3.5</td>
+				</tr>
+				<!-- Row of Data 3-->
+				<tr>
+					<td>Projekt 2 poprawa</td>
+					<td colspan="2" bgcolor="yellow">3.0</td>			
+				</tr>
+				<!-- Row of Data 4-->
+				<tr>
+					<td >Projekt 3 etap 1</td>
+					<td bgcolor="lime"> 5.0</td>
+					<td bgcolor="pink" colspan="3">3.5</td>
+					<td bgcolor="lime">5.0</td>
+				</tr>
+				<!-- Row of Data 5-->
+				<tr>
+					<td >Projekt 3 etap 2</td>
+					<td bgcolor="lime" rowspan="2"> 5.5</td>
+					<td bgcolor="pink" colspan="3">2.0</td>
+					<td bgcolor="lime" rowspan="2">5.5</td>
+				</tr>
+				<!-- Row of Data 6-->
+				<tr>
+					<td>Projekt 3 poprawa</td>
+					<td bgcolor="pink" colspan="3">3.5</td>			
+				</tr>
+				
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Średnia</th>
+					<td>4.75</td>
+					<td>3.4</td>
+					<td>3.0</td>
+					<td>2.91</td>
+					<td>4.875</td>
+				</tr>
+			</tfoot>
+		</table>
+	
+		<details>
+			<summary>Graficzne przedstawienie średnich</summary>
+			<p>Średnia Studenta 1 <meter min="2.0" max="5.5" low="3.5" value="4.75">Very good</meter>.</p>
+			<p>Średnia Studenta 2 <meter min="2.0" max="5.5" low="3.5" value="3.4">Very good</meter>.</p>
+			<p>Średnia Studenta 3 <meter min="2.0" max="5.5" low="3.5" value="3.0">Very good</meter>.</p>
+			<p>Średnia Studenta 4 <meter min="2.0" max="5.5" low="3.5" value="2.91">Very good</meter>.</p>
+			<p>Średnia Studenta 5 <meter min="2.0" max="5.5" low="3.5" value="4.875">Very good</meter>.</p>
+		</details>
+	</section>
+
+	<h2 id="idTabela2">Tabela - Modyfikacja</h2>
+	<table border="10">
+		<thead>
+			<tr>
+				<th>A</th>
+				<th colspan="3">&lt;HEADER&gt;</th>
+				<th>B</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Row of Data 1-->
+			<tr>
+				<td>C</td>
+				<td>D</td>
+				<td>E</td>
+				<td colspan="2" rowspan="2">@</td>
+			</tr>
+			<!-- Row of Data 2-->
+			<tr>
+				<td colspan="2" rowspan="2"><img src="kwiatek.jpg" alt="rysunek czerwonego kwiatka"></td>
+				<!--<td>3.5</td>-->
+				<td>F</td>
+				<!--<td>2.0</td>-->
+			</tr>
+			<!-- Row of Data 3-->
+			<tr>
+				<td>G</td>
+				<td>H</td>
+				<td>I</td>			
+			</tr>
+			<!-- Row of Data 4-->
+			<tr>
+				<td>J</td>
+				<td>K</td>
+				<td colspan="2"><a href="https://edukacja.pwr.wroc.pl/EdukacjaWeb/studia.do">dasdas</a></td>
+				<td>L</td>
+			</tr>
+	</table>
+
+	<h2 id="idFormularz">Formularz - Opowiedz o swojej książce</h2>
+	<form method="post" action="http://localhost:5500/rozw2.html">
+        <p>
+            <label for="idTytul">Tytul książki:</label>
+            <input id="idTytul" name="WpiszTytul" type="text" size="30" maxlength="50">
+        </p>
+        <p>
+            <label for="idLogin">Login:</label>
+            <input id="idLogin" name="WpiszLogin" type="text" size="30" maxlength="50">
+        </p>
+        <p>
+            <label for="idPass">Hasło:</label>
+            <input id="idPass" name="WpiszHaslo" type="password" size="30" maxlength="50">
+        </p>
+
+        <p>
+            <label for="gatunek-choice">Gatunek:</label>
+            <input list="gatunki" id="gatunek-choice" name="GatunekChoice" 
+            placeholder="nazwa gatunku">
+            
+            <datalist id="gatunki">
+                <option value="Fantasy">
+                <option value="Kryminał">
+                <option value="Romans">
+                <option value="Horror">
+                <option value="Historyczne">
+            </datalist>
+        </p>
+        <p>
+            <label>Oceń książkę:</label>
+            <label><input name="ocenaKsiazki" type="radio" value="grade5">5</label>
+            <label><input name="ocenaKsiazki" type="radio" value="grade4">4</label>
+            <label><input name="ocenaKsiazki" type="radio" value="grade3" checked>3</label>
+            <label><input name="ocenaKsiazki" type="radio" value="grade2">2</label>
+            <label><input name="ocenaKsiazki" type="radio" value="grade1">1</label>
+        </p>
+        <p>
+            <label>Czy poleciłbyś tę książkę przyjaciołom?
+                <select name="bookRecommend">
+                    <option value="DlaWszystkich">Tak, poleciłbym każdemu</option>
+                    <option value="DlaCzytelnikow">Tak, poleciłbym każdemu czytelnikowi</option>
+                    <option value="DlaFanow">Tak, poleciłbym fanom gatunku</option>
+                    <option value="niszowe">Tak, ale tylko niszowej grupie</option>
+                    <option value="Nie">Nie.</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>Wybierz swój ulubiony kolor</label>
+            <input id="idKolor" name="ulubiony kolor" type="color" value="#FF00FF">
+        </p>
+        <p>
+            <label>Data rozpoczęcia czytania:</label>
+            <input id="idDataRoz" name="Data rozpoczecia" type="date" value="2021-09-12">
+        </p>
+        <p>
+            <label>Data ukończenia czytania:</label>
+            <input id="idDataUkon" name="Data ukonczenia" type="datetime-local">
+        </p>
+        <p>
+            <label>Twoja recenzja książki:</label><br>
+            <textarea name="recenzja" cols="70" rows="4">Uważam, że ta książka </textarea>
+        </p>
+        <p>
+            <label>Jakie emocje wywołuje w Tobie czytanie tej książki?</label><br>
+            <label><input name="knowledge" type="checkbox" value="śmiech" checked>Śmiech</label>
+            <label><input name="knowledge" type="checkbox" value="niepokój">Niepokój</label>
+            <label><input name="knowledge" type="checkbox" value="ciekawość">Ciekawość</label>
+            <label><input name="knowledge" type="checkbox" value="smutek">Smutek</label>
+            <label><input name="knowledge" type="checkbox" value="zdumienie">Zdumienie</label>
+        </p>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+    <article>
+		<h2>Recenzja Zbrodni i Kary</h2>
+        [...]
+        Zbrodnia i kara, jak powszechnie wiadomo, porusza problem indywidualnej etyki,
+        a zarazem kwestionuje prawo wybitnej jednostki do przekraczania ogólnie obowiązujących norm moralnych.
+        Raskolnikow jest postacią, która kontestuje zasady społeczne, uważając, że ma prawo je przekraczać, gdyż doskonale je poznał.
+        Z drugiej strony zdaje sobie boleśnie sprawę z tego, że mimo wszystko przynależy do społecznych struktur i
+        jest czymś nieuniknionym, że musi w konsekwencji poddać się ich prawom.<br>
+        <br>
+        Dzięki temu będzie mógł pogodzić się ze społeczeństwem, ale i z własnym sumieniem. Boohater przyjmuje więc w ostatecznym 
+        rozrachunku prawa ustanowione przez społeczeństwo, uznaje, że jednostka nie może stawać ponad nie. Czy był to wynik przemyśleń 
+        samego Dostojewskiego, skazanego na łagry, czy też chęć pokazania, że akceptuje społeczne prawa? Tego nie wiemy. Z powieści 
+        wynika jednakże znaczące przesłanie – miłość jest tym, co potrafi zmazać winy, uczynić człowieka lepszym, zmienić zbrodniarza 
+        w pełnoprawnego członka społeczeństwa.<br>
+        [...]
+    </article>
+    <aside>Aby przeczytać cały artykuł <a href="https://www.granice.pl/recenzja/zbrodnia-i-kara/12409" target="_blank">kliknij tutaj</a></aside>
+    <section>
+		<h2>Spis treści:</h2>
+        <ol type="I">
+            <li><a href="#idStart">Początek strony</a></li>
+            <li><a href="#idTabela">Tabela - wyników studentów</a></li>
+            <li><a href="#idFormularz">Formularz - oceń książkę</a></li>
+		</ol>
+    </section>
+</body>
+</html>

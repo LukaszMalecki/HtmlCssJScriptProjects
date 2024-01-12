@@ -1,0 +1,601 @@
+#blok2
+{
+    background-color:chartreuse;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 148px;
+    top: 10px;
+}
+.blok3
+{
+    background-color: darkturquoise;
+    position: relative;
+    width: 188px;
+    height: 188px;
+    left: 10px;
+    top: 10px;
+    margin: 50px 10px 100px 5px;
+    border-width: 30px 20px 5px 30px;
+    border-color: crimson;
+    border-style: dotted;
+}
+#blok4
+{
+    background-color:mediumvioletred;
+    position: static;
+    width: 128px;
+    height: 128px;
+    left: 10px;
+    top: 10px;
+}
+#blokTekst
+{
+    float:left;
+    text-align: center;
+    background-color: khaki;
+    width: 220px;
+    height: 50px;
+    margin: 10px;
+
+    font-size: 16px;
+}
+#blokTekst2
+{
+    float:right;
+    text-align: center;
+    background-color:forestgreen;
+    width: 80px;
+    height: 110px;
+    margin: 15px;
+    padding: 10px;
+
+    font-size: 16px;
+    color:blanchedalmond;
+}
+h1
+{
+    font-size: 40px;
+    text-align: center;
+}
+p
+{
+    font-size: 26px;
+}
+.pole
+{
+    background-color: aquamarine;
+    position: relative;
+    width:600px;
+    height:420px;
+}
+
+.blok3inside
+{
+    color: antiquewhite;
+    background-color: crimson;
+    position: relative;
+    width: 30px;
+    height: 50px;
+    left: 100px;
+    top: 15px;
+    padding: 10px 10px 10px 10px ;
+
+}
+.wizjer
+{
+    background-color: azure;
+    position: relative;
+    left: 0px;
+    top: 5px;
+    width: 30px;
+    height: 15px;
+}
+/*
+##################################################################
+                        ZAD2
+###############################################################
+
+*/
+
+.myCanvas
+{
+    border:1px solid #000000;
+}
+
+
+
+
+
+.floater
+{
+    float: left;
+}
+.floaterRight
+{
+    float: right;
+}
+
+
+#can2
+{
+    width: 500px;
+    height: 190px;
+}
+
+#can3
+{
+    width: 60px;
+    height: 210px;
+}
+
+#can4
+{
+    width: 300px;
+    height: 400px;
+
+}
+
+#can5
+{
+    width: 30px;
+    height: 280px;
+}
+
+
+/*
+##################################################################
+                        ZAD2 END
+###############################################################
+
+*/
+
+
+
+#buzia
+{
+    background-color: darkred;
+    position: relative;
+    width: 520px;
+    height: 100px;
+    left: 5px;
+    top: 70%;
+}
+.zab
+{
+    position: relative;
+    background-color: cornsilk;
+    width: 60px;
+    height: 35px;
+}
+#zab1
+{
+    left: 30%;
+    top: 0%;
+}
+#zab2
+{
+    left: 60%;
+    top: -35px;
+}
+
+
+p::first-line
+{
+    text-decoration: underline;
+}
+p::first-letter
+{
+    font-size:175%;
+    color: chocolate;
+}
+p::selection
+{
+    color: darkorange;
+    background-color: firebrick;
+    text-decoration: underline;
+    text-decoration-color:dimgray;
+}
+
+
+
+:link
+{
+    color:lime;
+    font-size: 30px;
+    text-decoration:underline;
+    text-decoration-color: aquamarine;
+}
+a:visited
+{
+    color:darkgreen;
+    text-decoration:none;
+    text-decoration-color: purple;
+}
+
+div :link
+{
+    color:rgb(255, 255, 255);
+}
+div :visited
+{
+    color:rgb(200, 200, 200);
+}
+
+
+#menu
+{
+    background-color:red;
+    color:aliceblue;
+    font-size: 50px;
+    position: fixed;
+    width: 256px;
+    height: 60px;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+#menu:hover #menu1
+{
+    display: block;
+}
+#menu:hover #menu2
+{
+    display: block;
+}
+#menu:hover #menu3
+{
+    display: block;
+}
+#menu:hover #menu4
+{
+    display: block;
+}
+
+#menu1
+{
+    display: none;
+    background-color:yellow;
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu2
+{
+    display: none;
+    background-color:rgb(46, 231, 49);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 0px;
+    top: 120px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu3
+{
+    display: none;
+    background-color: rgb(111, 182, 236);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 0px;
+    top: 180px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu4
+{
+    display: none;
+    background-color:rgb(244, 173, 42);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 0px;
+    top: 240px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#menu2op1
+{
+    display: none;
+    background-color:rgb(35, 23, 209);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu2op2
+{
+    display: none;
+    background-color:rgb(23, 209, 166);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 60px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu2op3
+{
+    display: none;
+    background-color:rgb(209, 23, 23);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 120px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+
+#menu2:hover #menu2op1
+{
+    display: block;
+}
+#menu2:hover #menu2op2
+{
+    display: block;
+}
+#menu2:hover #menu2op3
+{
+    display: block;
+}
+
+
+
+#menu4op1
+{
+    display: none;
+    background-color:rgb(35, 23, 209);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu4op2
+{
+    display: none;
+    background-color:rgb(23, 209, 166);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 60px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu4op3
+{
+    display: none;
+    background-color:rgb(209, 23, 23);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 120px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+
+#menu4:hover #menu4op1
+{
+    display: block;
+}
+#menu4:hover #menu4op2
+{
+    display: block;
+}
+#menu4:hover #menu4op3
+{
+    display: block;
+}
+
+
+
+
+/*dsadasdasd'
+as
+fe
+f
+waef
+
+asd
+*/
+
+.menuDrop
+{
+    background-color:red;
+    color:aliceblue;
+    font-size: 50px;
+    position: fixed;
+    width: 256px;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+.menuDrop:hover .menu2Drop
+{
+    display: block;
+}
+
+
+.menu2Drop
+{
+    display: none;
+    background-color:yellow;
+    position: relative;
+    font-size: 50px;
+    width: 256px;
+    margin-top: 2px;
+    text-align: center;
+    border: 2px 2px 2px 2px;
+    border-color: black;
+}
+
+
+.menu2DropSideFirst
+{
+    display: none;
+    background-color:rgb(35, 23, 209);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    left: 256px;
+    top: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+.menu2DropSide
+{
+    display: none;
+    background-color:rgb(35, 23, 209);
+    position: relative;
+    font-size: 50px;
+    width: 256px;
+    left: 256px;
+    top: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+.menu2DropSideContainer
+{
+    position: absolute;
+    width: 256px;
+    top: 0px;
+    /*left: 256px;*/
+}
+#menu2op2
+{
+    display: none;
+    background-color:rgb(23, 209, 166);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 60px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu2op3
+{
+    display: none;
+    background-color:rgb(209, 23, 23);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 120px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+
+.menu2Drop:hover .menu2DropSide
+{
+    display: block;
+}
+.menu2Drop:hover .menu2DropSideFirst
+{
+    display: block;
+}
+#menu2:hover #menu2op2
+{
+    display: block;
+}
+#menu2:hover #menu2op3
+{
+    display: block;
+}
+
+
+
+#menu4op1
+{
+    display: none;
+    background-color:rgb(35, 23, 209);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu4op2
+{
+    display: none;
+    background-color:rgb(23, 209, 166);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 60px;
+    margin-top: 0px;
+    text-align: center;
+}
+#menu4op3
+{
+    display: none;
+    background-color:rgb(209, 23, 23);
+    position: absolute;
+    font-size: 50px;
+    width: 256px;
+    height: 60px;
+    left: 256px;
+    top: 120px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+
+#menu4:hover #menu4op1
+{
+    display: block;
+}
+#menu4:hover #menu4op2
+{
+    display: block;
+}
+#menu4:hover #menu4op3
+{
+    display: block;
+}

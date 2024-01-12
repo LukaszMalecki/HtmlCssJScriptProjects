@@ -1,0 +1,72 @@
+#sTabela
+{
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#tabelaStud
+{
+    background-color: aliceblue;
+    font-size: 16px;
+    border: 5px solid;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: 300;
+}
+#tabelaStud th
+{
+    border: 5px solid;
+}
+#tabelaStud td
+{
+    border: 3px solid;
+}
+#blank
+{
+    background-color: beige;
+}
+#naglowek
+{
+    background-color:cornflowerblue;
+    font-weight: 700;
+}
+.naglowekPion
+{
+    background-color: burlywood;
+    font-weight: 700;
+}
+#tabelaStud .naglowekPion
+{
+    border: 5px solid;
+}
+.podsumowanieRow
+{
+    background-color: rgb(249, 188, 249);
+    border: 4px solid;
+    font-weight: 600;
+}
+#podsumowanieHeader
+{
+    background-color: rgb(245, 128, 245);
+    border: 4px solid;
+    text-decoration: none;
+}
+#highestGrade
+{
+    text-decoration: underline;
+}
+.proj2gr1
+{
+    background-color: lightblue;
+}
+.proj2gr2
+{
+    background-color: yellow;
+}
+.proj3gr1
+{
+    background-color: lime;
+}
+.proj3gr2
+{
+    background-color: pink;
+}
